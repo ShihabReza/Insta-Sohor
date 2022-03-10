@@ -51,6 +51,8 @@ const switchTab = (id) => {
 };
 
 const createPost = (post) => {
+  console.log(post)
+  
     const image = post.image;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
@@ -110,9 +112,7 @@ const createPost = (post) => {
                       <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="User Picture" />
                     </a>
 
-                    <span>Liked by
-                      <a class="post__name--underline" href="#">user123</a> and
-                      <a href="#">73 others</a></span>
+                   
                   </div>
 
                   <hr/>
@@ -120,9 +120,11 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                      ${post.comments[0].user}
+                      ${post.comments[0].text}
                       </a>
-                      ${post.comments?.text}
+                     
+                      
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>
