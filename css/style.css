@@ -256,3 +256,22 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.quscin{
+  
+  width:80%;
+  margin:0 auto;
+}
+.how-js{
+  margin-top: 50px;
+  border: 1px solid blue;
+  padding: 15px;
+  font-weight: 600;
+  font-size: medium;
+}
+.storge{
+  margin-top: 50px;
+  border: 1px solid blue;
+  padding: 15px;
+  font-weight: 600;
+  font-size: medium;
+}
