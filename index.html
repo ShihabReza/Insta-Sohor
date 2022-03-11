@@ -80,13 +80,24 @@
         <section class="quscin">
            <div class="how-js">
             <h1>জাভাস্ক্রিপ্ট কিভাবে কাজ করে</h1>
-            <p>JavaScript is a client-side scripting language and one of the most efficient, commonly used scripting languages.The term.client-side scripting language means that it runs at the client-side or on the client machine inside the web-browsers, but one important thing to remember is that client's web-browser also needs to support the JavaScript or it must be JavaScript enabled. For example, Google Chrome has its own JavaScript engine called V8. Nowadays,most of the modern web browsers support JavaScript and have their JavaScript engines.</p>
+            <p>JavaScript is a client-side scripting language and one of the most efficient, commonly used scripting languages.The term.client-side scripting language means that it runs at the client-side or on the client machine inside the web-browsers, For example, Google Chrome has its own JavaScript engine called V8. Nowadays,most of the modern web browsers support JavaScript and have their JavaScript engines.</p>
            </div>
 
             <div class="storge">
                 <h1>local storage</h1>
             <p>লোকাল ষ্টোরেজে ডাটা সবসময় থাকা যাই এবং ব্রাউজার রিলোড করলেও ডাটা মুছে যাই না এবং পিসি বন্ড করেও অন করলেও ডাটা থাকা 
-            লোকাল ষ্টোরেজে দুইটি ডাটা নেই (১.কি) (২.ভ্যালু) এবং দুইটি ডাটা স্ট্রিং থাকতে হবে লোকাল স্টোরেজ থেকে  কোনো ডাটা ডিলিট করতে হলে (storage.removeItem(keyName))দিতে হয়</p>
+            লোকাল ষ্টোরেজে দুইটি ডাটা নেই (১.কি) (২.ভ্যালু) এবং দুইটি ডাটা স্ট্রিং থাকতে হবে 
+            লোকাল স্টোরেজে ডাটা অ্যাড করতে storage.setItem(keyName, keyValue) করতে হয় 
+            লোকাল স্টোরেজ থেকে  কোনো ডাটা ডিলিট করতে হলে storage.removeItem(keyName)দিতে হয়
+            লোকাল স্টোরেজে ডাটা clere করতে হলে localStorage.clear()ব্যবহার করতে হয় 
+        </p>
+            <h1>sessionStorage</h1>
+            <p>সেশন স্টোরেজে এর expiry ডেট রয়েছ ব্রাউসার close করে দিল সেশন স্টোরেজে রিমুভ হয় 
+                সেশন স্টোরেজে দুইটি ডাটা নেই (১.কি) (২.ভ্যালু)
+                সেশন স্টোরেজে ডাটা অ্যাড করতে storage.setItem(keyName, keyValue) করতে হয়
+                সেশন স্টোরেজে থেকে  কোনো ডাটা ডিলিট করতে হলে storage.removeItem(keyName)দিতে হয়
+                সেশন স্টোরেজে থেকে ডাটা clere করতে হলে localStorage.clear()ব্যবহার করতে হয়
+            </p>
             </div>
         </section>
         <footer></footer>
